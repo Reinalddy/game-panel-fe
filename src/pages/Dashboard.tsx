@@ -1,4 +1,5 @@
 import { useAuth } from "../auth/useAuth";
+import PluginMarketplace from "../components/PluginMarketplace";
 
 export default function Dashboard() {
     const { user } = useAuth();
@@ -82,6 +83,7 @@ export default function Dashboard() {
                     />
                 </div>
             </main>
+            <PluginMarketplace />
         </div>
     );
 }
